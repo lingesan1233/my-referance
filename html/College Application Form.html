@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: solid #f8e802;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(1,1,1, 0.1);
+            width: 300px;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background:solid  #0ce604;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>College Application Form</h2>
+        <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone:</label>
+            <input type="tel" name="phone" required>
+
+            <label>Select Course:</label>
+            <select name="course" required>
+                <option value="bca">BCA</option>
+                <option value="bsc_cs">B.Sc CS</option>
+                <option value="bba">BBA</option>
+            </select>
+
+            <label>Upload Marksheet:</label>
+            <input type="file" name="marksheet" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

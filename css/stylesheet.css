@@ -9,12 +9,11 @@ body {
 }
 .container {
     background: rgb(231, 221, 221); 
-   
+    background-image: url("f:/my referance/download.jpg");
     padding: 100px;
     border-radius: 100px;
     box-shadow: 0 0 10px rgba(1,1,1, 0.1);
     width: 300px;
-    background-image: url("images/download.jpg");
 }
 
 label, input, select, button {

@@ -4,31 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>College Application Form</title>
-    <link rel="stylesheet"href="College Application Form.css">
+    <link rel="stylesheet" href="F:\my-referance\css\stylesheet.css">
 </head>
-<body> 
+<body>
     <div class="container">
         <h2>College Application Form</h2>
-        <form action="submit_application.php" method="POST" enctype="multipart/form-data">
+        <div class="image-container">
+            <img src="c:\Users\007\Downloads\download.jpg">
+        </div>
+        <form>
             <label>Full Name:</label>
             <input type="text" name="name" required>
-
             <label>Email:</label>
             <input type="email" name="email" required>
-
             <label>Phone:</label>
             <input type="tel" name="phone" required>
-
             <label>Select Course:</label>
             <select name="course" required>
                 <option value="bca">BCA</option>
                 <option value="bsc_cs">B.Sc CS</option>
                 <option value="bba">BBA</option>
             </select>
-
             <label>Upload Marksheet:</label>
             <input type="file" name="marksheet" required>
-
             <button type="submit">Submit</button>
         </form>
     </div>
